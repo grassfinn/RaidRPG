@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
 import './App.css';
 import Start from './component/Start';
 import CreatePlayer from './assets/utils/createPlayer';
@@ -20,7 +19,6 @@ export default function App(props) {
     }
   }
 
-
   return (
     <main>
       {mode === 'start' && <Start startGame={() => setMode('battle')} />}
@@ -29,7 +27,7 @@ export default function App(props) {
           <section className="battle-ground">
             <Player />
             <h2>VS</h2>
-            <CreateEnemy/>
+            <CreateEnemy />
           </section>
           {/* <button onClick={() => console.log(Player)}>Fight!</button> */}
         </div>
